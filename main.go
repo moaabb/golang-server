@@ -23,7 +23,8 @@ func main() {
 	flag.Parse()
 
 	s := http.Server{
-		Addr: fmt.Sprintf(":%s", cfg.PORT),
+		Addr:    fmt.Sprintf(":%s", cfg.PORT),
+		Handler: routes(),
 	}
 
 	log.Printf("Server Listening on port %s \n", cfg.PORT)
