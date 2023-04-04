@@ -24,8 +24,6 @@ jobs:
         organization: moaabb
         # Repository
         repository: go-server
-        # Docker registry
-        registry: hub.docker.com
         # Docker login
         login: ${{ secrets.DOCKER_HUB_USERNAME }} 
         # Docker password
